@@ -51,6 +51,9 @@ body {
     background-color: LightGray;
 }
 div {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
     border: 1px solid Chocolate;
 }
 
@@ -63,8 +66,25 @@ div {
 	width: 970px;
 	height: 70px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
+
 .logo {
 	margin-top: 16px;
-	margin-left: 21px;
+}
+
+.top-navigation .links {
+	float: right;
+
+}
+
+.links > li {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif; 
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+	margin-top: 24px;
+	margin-left: 24px;
 }
