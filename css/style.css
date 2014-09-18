@@ -143,4 +143,22 @@ button {
 	background-color: #ee5726;
 }
 
+.buttons{
+border: 2px white solid;
+width:306px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 32px;
+}
+
+.half-learn{
+	border:2px white solid;
+	float: left;
+}
+
+.half-watch {
+	float:left;
+	border: 2px white dashed;
+	margin-top: 10px
+}
 
