@@ -152,7 +152,7 @@ button:hover {
 
 .buttons{
 border: 2px white solid;
-width:306px;
+width:340px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 32px;
@@ -164,15 +164,21 @@ margin-top: 32px;
 
 }
 
-
-
 .half-watch {
 	float:left;
 	border: 2px white dashed;
-	margin-top: 10px
+	margin-top: 10px;
+	margin-left: 24px;
+	width: 160px;
+	
 }
+.half-watch p {
+display: inline-block;
+position: relative;
+top: 50%;
+ transform: translate(0, -50%)
 
-
+}
 
 
 .learn-more {
