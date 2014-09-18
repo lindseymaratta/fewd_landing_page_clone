@@ -173,10 +173,29 @@ margin-top: 32px;
 }
 
 
+
+
 .learn-more {
-	margin-top: 90px;
-	border: 2px purple dotted;
-	text-align: center;
-	transition: 300ms ease-out;
--webkit-animation: exploreBounce 0.85s ease-in-out infinite alternate;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+     -webkit-animation: bounce 1.8s infinite;
+    animation: bounce 1.8s infinite; 
 }
+
+ 
+ @-webkit-keyframes bounce { 
+    0%, 50%, {-webkit-transform: translateY(0);} 
+    50% {-webkit-transform: translateY(-30px);} 
+ 
+} 
+  
+@keyframes bounce { 
+    0%, 50% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+} 
+   
+
