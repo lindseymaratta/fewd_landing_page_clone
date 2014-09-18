@@ -164,9 +164,19 @@ margin-top: 32px;
 
 }
 
+
+
 .half-watch {
 	float:left;
 	border: 2px white dashed;
 	margin-top: 10px
 }
 
+
+.learn-more {
+	margin-top: 90px;
+	border: 2px purple dotted;
+	text-align: center;
+	transition: 300ms ease-out;
+-webkit-animation: exploreBounce 0.85s ease-in-out infinite alternate;
+}
