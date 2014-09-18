@@ -47,14 +47,20 @@ table {
 	border-spacing: 0;
 }
 /*End CSS Reset */
+
 body {
     background-color: LightGray;
+    font-family: 'Roboto', sans-serif; 
+	-webkit-font-smoothing: antialiased;
+	color: white;
 }
-div {
+.content {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
     border: 1px solid Chocolate;
+    margin: 0 auto;
+    width: 970px;
 }
 
 /* Navigation Section */
@@ -63,9 +69,7 @@ div {
 	background-color: #fff;
 }
 .top-navigation > .content {
-	width: 970px;
 	height: 70px;
-	margin: 0 auto;
 	padding: 0px 15px;
 }
 
@@ -76,8 +80,6 @@ div {
 .top-navigation .links {
 	float: right;
 display: inline-block;
-	font-family: 'Roboto', sans-serif; 
-	-webkit-font-smoothing: antialiased;
 	font-size: 16px; 
 	color: #838994; 
 	letter-spacing: 0.03em;
@@ -97,4 +99,29 @@ display: inline-block;
 .top-navigation .links li:hover{
 	color: #4c5058;
 	cursor: pointer;
+}
+
+/* Large background and Introduction */
+
+.introduction {
+	background-image: url(/Users/Lindsey/THINKFUL/Projects/startup-landing-page-clone/img/first-background.jpg);
+	background-size: cover;
+	background-position: 0 bottom;
+	height: 375px;
+}
+
+.content h1, h3 {
+	text-align: center;
+
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: -.02em;
+}
+
+.content h1 {
+	margin-top:18px;
+	margin-bottom: 18px;
 }
