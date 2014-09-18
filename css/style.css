@@ -89,6 +89,7 @@ display: inline-block;
 .top-navigation .links li {
 	display: inline-block;
 	margin-left:25px;
+	transition: color .2s ease;
 	
 }
 
