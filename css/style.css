@@ -140,7 +140,13 @@ button {
 	font-size: 16px;
 	color: white;
 	font-weight: 300;
+	transition: background-color .2s ease;
 	background-color: #ee5726;
+}
+
+button:hover {
+	background-color: #d9400e;
+	cursor: pointer;
 }
 
 .buttons{
@@ -154,6 +160,7 @@ margin-top: 32px;
 .half-learn{
 	border:2px white solid;
 	float: left;
+
 }
 
 .half-watch {
