@@ -78,6 +78,7 @@ nav {
 	top: 0p;
 	left: 0,;
 	width: 100%;
+	border-bottom: 1px #838994 solid; 
 }
 .logo {
 	margin-top: 16px;
