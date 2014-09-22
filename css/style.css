@@ -123,7 +123,8 @@ body {
 /**I had position: 0 bottom above... it worked fine. why center instead?
 	also, background size of image is responsive, i got several different values, and
 	the code given by thinkful is also different than mine and different than the
-	"hint" in the lesson which says its just under 600px. **/
+	"hint" in the lesson which says its just under 600px. Further, now the text is not fixed
+	to the background?**/
 
 
 /* I had all of my heading tags style under the .content class instead of .introduction.  
@@ -138,7 +139,7 @@ body {
 }
 .introduction h1 {
 	font-size: 50px;
-	margin-top: 250px;
+	margin-top: 200px;
 }
 
 .introduction h3 {
@@ -268,6 +269,7 @@ top: 10px;
     top: 65px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
      -webkit-animation: bounce 1.8s infinite;
     animation: bounce 1.8s infinite; 
 }
@@ -287,6 +289,8 @@ top: 10px;
    
 /* below introduction photo */
 
+/* Original code.
+
 .cases {
 	margin-top: 100px;
 }
@@ -294,7 +298,6 @@ top: 10px;
     width: 33%;
     float:left;
     display: inline-block;
-    /* styles to assist with debugging */
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 1px solid black;
@@ -316,8 +319,45 @@ top: 10px;
 	line-height: 1.54;
 
  }
+*/
 
- /**cheat*/
+.cases {
+	background-color: #fff;
+	overflow:hidden;
+	padding-bottom:160px;
+}
+.cases .content {
+	margin-top: 126px;
+	padding: none;
+	color: #1d1e21;
+	text-align: center;
+}
+
+.cases h2 {
+	font-size: 44px;
+	margin:26px 0 50px;
+	font-weight: 300
+}
+
+.cases .devices {
+	display:flex;
+}
+
+.cases .devices > li {
+	width: 33.333333%;
+
+}
+.cases .devices h3 {
+	font-weight: 400;
+	font-size: 25px
+	margin: 40px 0px 30px;
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 21px;
+}
+
+ /**footer*/
 
  .social {
     background-color: #fff;
