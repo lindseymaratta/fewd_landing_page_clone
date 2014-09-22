@@ -112,7 +112,7 @@ body {
 /* Large background and Introduction */
 
 .introduction {
-	background-image: url(/Users/Lindsey/THINKFUL/Projects/startup-landing-page-clone/img/first-background.jpg);
+	background-image: url('../img/first-background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
