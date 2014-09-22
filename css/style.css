@@ -52,7 +52,6 @@ body {
     background-color: LightGray;
     font-family: 'Roboto', sans-serif; 
 	-webkit-font-smoothing: antialiased;
-	color: white;
 }
 .content {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -61,32 +60,32 @@ body {
     border: 1px solid Chocolate;
     margin: 0 auto;
     width: 970px;
+    padding: 0 15px;
 }
 
 /* Navigation Section */
 
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	border-bottom: 1px #838994 solid; 
+	width: 100%;
+	z-index: 3;
 }
 .top-navigation > .content {
 	height: 70px;
-	padding: 0px 15px;
+
 }
 
-nav {
-	position: fixed;
-	top: 0p;
-	left: 0,;
-	width: 100%;
-	border-bottom: 1px #838994 solid; 
+.top-navigation .logo {
+	height: 70px;
 }
-.logo {
-	margin-top: 16px;
-}
+/* I had margin-top:16px above instead of the height as 70, why does this work better?
+	I also had it without the .top-navigation class added, only .logo.
+	why is this better practice?*/
 
 .top-navigation .links {
 	float: right;
-display: inline-block;
 	font-size: 16px; 
 	color: #838994; 
 	letter-spacing: 0.03em;
@@ -104,6 +103,7 @@ display: inline-block;
     color: #4c5058;
     font-weight: 600;
 }
+
 .top-navigation .links li:hover{
 	color: #4c5058;
 	cursor: pointer;
@@ -114,9 +114,11 @@ display: inline-block;
 .introduction {
 	background-image: url(/Users/Lindsey/THINKFUL/Projects/startup-landing-page-clone/img/first-background.jpg);
 	background-size: cover;
-	background-position: 0 bottom;
+	background-position: center bottom;
 	height: 375px;
 }
+
+/**I had position: 0 bottom above... it worked fine. why center instead? **/;
 
 .content {
 	margin-left: auto;
@@ -139,8 +141,9 @@ display: inline-block;
 .content h1 {
 	font-size: 50px;
 	font-weight: 300;
-	margin-top: 70px;
+	margin-top: 80px;
 }
+
 h3 {
 	font-size: 24px;
 	font-weight: 400;
@@ -249,4 +252,46 @@ top: 50%;
 	line-height: 1.54;
 
  }
+
+ /**cheat*/
+
+ .social {
+    background-color: #fff;
+    padding-bottom: 150px;
+    text-align: center;
+ }
+
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 21px 0;
+}
+.social .icons > li {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 20px 5px;
+    border: 1px solid #eaebec;
+    padding: 10px 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
+.social .copy {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #838994;
+}
+
 
