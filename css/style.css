@@ -114,11 +114,16 @@ body {
 .introduction {
 	background-image: url(/Users/Lindsey/THINKFUL/Projects/startup-landing-page-clone/img/first-background.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center bottom;
-	height: 375px;
+	height: 576px;
+	overflow: auto;
 }
 
-/**I had position: 0 bottom above... it worked fine. why center instead? **/;
+/**I had position: 0 bottom above... it worked fine. why center instead?
+	also, background size of image is responsive, i got several different values, and
+	the code given by thinkful is also different than mine and different than the
+	"hint" in the lesson which says its just under 600px. **/
 
 .content {
 	margin-left: auto;
