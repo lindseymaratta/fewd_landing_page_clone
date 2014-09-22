@@ -125,34 +125,33 @@ body {
 	the code given by thinkful is also different than mine and different than the
 	"hint" in the lesson which says its just under 600px. **/
 
-.content {
-	margin-left: auto;
-	margin-right: auto;
-}
-.content h1, h2, h3 {
-	font-size: 50px;
+
+/* I had all of my heading tags style under the .content class instead of .introduction.  
+	I suppose this made the css bulkier and repetitive as I had to change them down the road.
+	*/
+
+.introduction h1, 
+			h3 {
+	color: white;
 	font-weight: 300;
-	letter-spacing: -.02em;
-	margin-top: 18px;
-	margin-bottom: 18px;
-	line-height: 1.25;
 	text-align: center;
 }
-
-.content h2 {
-	font-size: 40px;
-	color: #000;
-}
-.content h1 {
+.introduction h1 {
 	font-size: 50px;
-	font-weight: 300;
-	margin-top: 80px;
+	margin-top: 250px;
 }
 
-h3 {
-	font-size: 24px;
-	font-weight: 400;
+.introduction h3 {
+	font-size: 25px;
+	margin-top: 20px;
 }
+
+/* buttons */
+/* I had most styles applied to "button" element rather than within the class. I guess this
+	would make things difficult later if there are more buttons.*/
+
+/** MY ORIGINAL CSS, worked fine... Yet when changed to the Thinkful css file, the introduction text now moves along
+the background and the buttons are not in line
 
 button {
 	text-shadow: none;
@@ -201,6 +200,65 @@ top: 50%;
  transform: translate(0, -50%)
 
 }
+*/
+.introduction .buttons{
+color: white;
+text-align: center;
+margin-top: 25px;
+}
+
+.introduction .half {
+	width: 49%;
+	padding: 0 15px;
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 18px;
+	line-height: 1.2;
+	}
+
+.half-learn{
+	text-align: right;
+}
+
+.half-watch {
+	text-align:left;
+	padding: 16px 24px;
+	font-weight: 500;
+	
+}
+.introduction .learn button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	color: white;
+	font-size: 18px;
+	width: 155px;
+	background-color: #ee5726;
+	border-color: #f15a29;
+	transition: background-color .2s ease;
+	
+
+}
+
+:focus{
+	outline:none;
+	}
+/* what does the above do? */
+
+.introduction .learn button:hover {
+	background-color: #d9400e;
+	border-color: #cf3d0e;
+	cursor: pointer;
+}
+
+
+.introduction .watch img {
+position: relative;
+top: 10px;
+
+}
+
 
 
 .learn-more {
@@ -213,6 +271,7 @@ top: 50%;
      -webkit-animation: bounce 1.8s infinite;
     animation: bounce 1.8s infinite; 
 }
+
 
  
  @-webkit-keyframes bounce { 
