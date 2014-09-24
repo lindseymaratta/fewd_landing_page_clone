@@ -209,21 +209,21 @@ margin-top: 25px;
 }
 
 .introduction .half {
-	width: 49%;
+	
 	padding: 0 15px;
 	display: inline-block;
-	vertical-align: bottom;
 	font-size: 18px;
 	line-height: 1.2;
 	}
 
-.half-learn{
+/* took out the vertical-align:bottom from above and fixed my alignemtn issues. */;
+.half .learn{
 	text-align: right;
 }
 
-.half-watch {
+.half .watch {
 	text-align:left;
-	padding: 16px 24px;
+	padding: 10px 24px;
 	font-weight: 500;
 	
 }
@@ -377,7 +377,6 @@ top: 10px;
     display: inline-block;
     margin: 20px 5px;
     border: 1px solid #eaebec;
-    padding: 10px 0;
     text-align: center;
 }
 .social .icons > li:hover {
