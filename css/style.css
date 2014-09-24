@@ -202,7 +202,7 @@ top: 50%;
 
 }
 */
-.introduction .buttons{
+.buttons{
 color: white;
 text-align: center;
 margin-top: 25px;
@@ -227,7 +227,7 @@ margin-top: 25px;
 	font-weight: 500;
 	
 }
-.introduction .learn button {
+button {
 	text-shadow: none;
 	border-style: none;
 	border-radius: 4px;
@@ -247,7 +247,7 @@ margin-top: 25px;
 	}
 /* what does the above do? */
 
-.introduction .learn button:hover {
+button:hover {
 	background-color: #d9400e;
 	border-color: #cf3d0e;
 	cursor: pointer;
@@ -349,20 +349,58 @@ top: 10px;
 }
 .cases .devices h3 {
 	font-weight: 400;
-	font-size: 25px
-	margin: 40px 0px 30px;
+	font-size: 25px;
 }
 .cases .devices p {
     font-weight: 300;
     font-size: 21px;
 }
 
+
+/*Middle section*/
+
+aside {
+	position: relative;
+	left:0;
+	max-width: 293px;
+	font-weight: 300;
+    font-size: 21px;
+    line-height: 1.5;
+
+}
+
+.content aside > p {
+	box-sizing: border-box;
+	margin-top: 31px;
+	margin-left: 0;
+	padding-left: 0;
+}
+.content aside > h3 {
+color:#f15a29;
+letter-spacing: -0.02em;
+font-weight: 400;
+margin-top: 18px;
+font-size: 24px;
+text-align: left;
+}
+/*prefooter*/
+
+.pre-foot ul {
+display: inline-block;
+margin: 35px;
+vertical-align: top;
+line-height: 1.5;
+}
+.pre-foot .header {
+	font-weight: bold;
+}
  /**footer*/
 
  .social {
     background-color: #fff;
     padding-bottom: 150px;
     text-align: center;
+    vertical-align: center;
  }
 
 .social hr {
