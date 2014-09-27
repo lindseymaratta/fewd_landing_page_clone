@@ -216,7 +216,7 @@ margin-top: 25px;
 	line-height: 1.2;
 	}
 
-/* took out the vertical-align:bottom from above and fixed my alignemtn issues. */;
+/* took out the vertical-align:bottom from above and fixed my alignemtn issues. */
 .half .learn{
 	text-align: right;
 }
@@ -328,7 +328,7 @@ top: 10px;
 }
 .cases .content {
 	margin-top: 126px;
-	padding: none;
+	padding: 0;
 	color: #1d1e21;
 	text-align: center;
 }
@@ -387,7 +387,7 @@ text-align: left;
 
 .pre-foot ul {
 display: inline-block;
-margin: 35px;
+margin: 25px;
 vertical-align: top;
 line-height: 1.5;
 }
@@ -403,6 +403,7 @@ line-height: 1.5;
     vertical-align: center;
  }
 
+
 .social hr {
     border: 0;
     border-top: 1px solid #eaebec;
@@ -415,6 +416,7 @@ line-height: 1.5;
     display: inline-block;
     margin: 20px 5px;
     border: 1px solid #eaebec;
+    vertical-align: center;
     text-align: center;
 }
 .social .icons > li:hover {
