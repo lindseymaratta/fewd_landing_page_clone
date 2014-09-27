@@ -448,7 +448,9 @@ line-height: 1.5;
 .social .icons > li:hover {
     cursor: pointer;
 }
-
+.fa {
+	margin: 12.5px;
+}
 .social .twitter {
     color: #55acee;
 }
