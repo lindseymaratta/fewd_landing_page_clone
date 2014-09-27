@@ -49,7 +49,7 @@ table {
 /*End CSS Reset */
 
 body {
-    background-color: LightGray;
+    background-color: white;
     font-family: 'Roboto', sans-serif; 
 	-webkit-font-smoothing: antialiased;
 }
@@ -57,7 +57,6 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
-    border: 1px solid Chocolate;
     margin: 0 auto;
     width: 970px;
     padding: 0 15px;
@@ -359,21 +358,32 @@ top: 10px;
 
 /*Middle section*/
 
-aside {
+.content aside {
 	position: relative;
 	left:0;
 	max-width: 293px;
 	font-weight: 300;
     font-size: 21px;
     line-height: 1.5;
-
+  	position:relative;
+  	top: 110px;
 }
 
+.buy-now {
+	background-image: url("../img/buy-now-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 900px;
+}
 .content aside > p {
 	box-sizing: border-box;
 	margin-top: 30px;
 	margin-left: 0;
 	padding-left: 0;
+}
+.buy-now .buttons {
+	text-align: left;
 }
 .content aside > h3 {
 color:#f15a29;
@@ -387,13 +397,26 @@ text-align: left;
 
 .pre-foot ul {
 display: inline-block;
-margin: 25px;
+margin: 30px;
+margin-top: 100px;
 vertical-align: top;
 line-height: 1.5;
 }
+.pre-foot a{
+	color: #9ba0a9;
+	text-decoration: none;
+	transition: color .1s ease;
+}
+.pre-foot a:hover {
+	color: #ee5726;
+}
+
 .pre-foot .header {
 	font-weight: bold;
+	color: #7c7f85;
+	line-height: 2;
 }
+
  /**footer*/
 
  .social {
